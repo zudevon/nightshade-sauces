@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nightshade Sauces — Fermented Hot Sauce · Hutto, Texas</title>
+  <meta name="description" content="Small-batch fermented hot sauce from Hutto, Texas. Five numbered flavor experiments in 5 fl oz bottles — and 1st Place Hot Sauce at the Cactus Land Brewing Co. competition, two years running.">
+  <link rel="canonical" href="https://zudevon.github.io/nightshade-sauces/">
+  <!-- SOCIAL / OG -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nightshade Sauces">
+  <meta property="og:description" content="Small-batch fermented hot sauce from Hutto, Texas — numbered experiments, back-to-back 1st place.">
+  <meta property="og:url" content="https://zudevon.github.io/nightshade-sauces/">
+  <meta property="og:image" content="https://zudevon.github.io/nightshade-sauces/assets/bottles.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nightshade Sauces">
+  <meta name="twitter:description" content="Small-batch fermented hot sauce from Hutto, Texas — numbered experiments, back-to-back 1st place.">
+  <meta name="twitter:image" content="https://zudevon.github.io/nightshade-sauces/assets/bottles.jpg">
+  <meta name="theme-color" content="#131110">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='58' fill='%23f2ede1'/%3E%3Ccircle cx='60' cy='60' r='45' fill='none' stroke='%232f4d2b' stroke-width='2'/%3E%3Ctext x='60' y='80' font-family='Georgia,serif' font-size='58' text-anchor='middle' fill='%2317130f'%3EN%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340..700;1,9..144,340..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Nightshade Sauces",
+    "foundingDate": "2024",
+    "address": { "@type": "PostalAddress", "addressLocality": "Hutto", "addressRegion": "TX", "addressCountry": "US" },
+    "slogan": "A Small-Batch Experiment in Flavor",
+    "description": "Small-batch fermented hot sauces from Hutto, Texas, sold in numbered five-ounce bottles.",
+    "award": "First Place Hot Sauce — Cactus Land Brewing Co. Hot Sauce & Salsa Competition, 2025 and 2026"
+  }
+  </script>
+  <style>
+    :root{
+      --bg:#131110;
+      --bg-2:#181411;
+      --ink:#17130f;
+      --paper:#f2ede1;
+      --paper-2:#eae3d3;
+      --cream:#f2ede1;
+      --muted:rgba(242,237,225,.64);
+      --hairline:rgba(242,237,225,.14);
+      --green:#2f4d2b;
+      --sage:#9db88a;
+      --chili:#c8452a;
+      --gold:#c9a45a;
+      --berry:#8a3540; --seoul:#c8452a; --greenone:#3e7a44; --island:#d0763a; --blush:#d16884;
+      --serif:"Fraunces",Georgia,serif;
+      --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+      --ease:cubic-bezier(.22,1,.36,1);
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+    }
+    body{
+      background:var(--bg);color:var(--cream);font-family:var(--sans);
+      font-size:1rem;line-height:1.7;-webkit-font-smoothing:antialiased;
+      overflow-x:hidden;
+    }
+    body::before{ /* grain */
+      content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.05;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E");
+    }
+    ::selection{background:var(--chili);color:var(--cream)}
+    img{max-width:100%;display:block}
+    a{color:inherit}
+    .wrap{max-width:1160px;margin-inline:auto;padding-inline:clamp(1rem,4vw,2rem)}
+    .skip{position:absolute;left:-9999px;top:0;background:var(--paper);color:var(--ink);padding:.6rem 1rem;z-index:1000;border-radius:8px}
+    .skip:focus{left:1rem;top:1rem}
+
+    /* ---------- type ---------- */
+    h1,h2,h3{font-family:var(--serif);font-weight:480;letter-spacing:-.01em;text-wrap:balance}
+    .kicker{
+      font-size:.72rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;
+      color:var(--sage);display:inline-flex;align-items:center;gap:.7em;
+    }
+    .kicker::before{content:"";width:2.2em;height:1px;background:var(--sage);opacity:.7}
+    .lede{color:var(--muted);max-width:60ch;font-size:clamp(1rem,1.4vw,1.13rem)}
+    h2{font-size:clamp(2rem,4.6vw,3.3rem);line-height:1.08}
+    .em{font-style:italic;font-weight:430}
+
+    /* ---------- header ---------- */
+    header{
+      position:fixed;inset:0 0 auto 0;z-index:200;border-bottom:1px solid transparent;
+      transition:background .35s var(--ease),border-color .35s var(--ease),backdrop-filter .35s;
+    }
+    header.scrolled{background:rgba(19,17,16,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--hairline)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+    .brand{display:flex;align-items:center;gap:.8rem;text-decoration:none}
+    .brand svg{width:42px;height:42px;flex:none}
+    .brand b{font-family:var(--serif);font-weight:520;font-size:1.06rem;letter-spacing:.02em}
+    .brand small{display:block;font-size:.6rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);font-weight:600}
+    .links{display:flex;gap:2rem;align-items:center}
+    .links a{
+      text-decoration:none;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;font-weight:500;
+      color:var(--muted);transition:color .25s;position:relative;padding-block:.3rem;
+    }
+    .links a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease)}
+    .links a:hover{color:var(--cream)}
+    .links a:hover::after{transform:scaleX(1);transform-origin:left}
+    .menu-btn{display:none;background:none;border:1px solid var(--hairline);color:var(--cream);border-radius:999px;padding:.55rem 1.1rem;font:600 .78rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+    .menu-overlay{position:fixed;inset:0;z-index:190;background:rgba(19,17,16,.96);backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center}
+    body.menu-open .menu-overlay{display:flex}
+    .menu-overlay nav{display:grid;gap:1.6rem;text-align:center}
+    .menu-overlay a{font-family:var(--serif);font-size:2rem;text-decoration:none;color:var(--cream)}
+    .menu-overlay a:hover{color:var(--gold);font-style:italic}
+
+    /* ---------- hero ---------- */
+    .hero{min-height:100svh;display:flex;align-items:center;position:relative;padding-top:96px;padding-bottom:2rem}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:center;width:100%}
+    .hero h1{font-size:clamp(2.7rem,6.6vw,5.1rem);line-height:1.02;margin:1.4rem 0 1.5rem;font-weight:440}
+    .hero h1 .em{color:var(--gold)}
+    .cta-row{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.2rem}
+    .btn{
+      display:inline-flex;align-items:center;gap:.6rem;text-decoration:none;font-weight:600;font-size:.86rem;
+      letter-spacing:.12em;text-transform:uppercase;padding:1rem 1.7rem;border-radius:999px;transition:transform .3s var(--ease),background .3s,color .3s,border-color .3s;
+    }
+    .btn:active{transform:scale(.97)}
+    .btn-primary{background:var(--chili);color:var(--cream);border:1px solid transparent}
+    .btn-primary:hover{background:#d9542f;transform:translateY(-2px)}
+    .btn-ghost{border:1px solid var(--hairline);color:var(--cream)}
+    .btn-ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+    .hero-art{position:relative}
+    .arch{
+      border-radius:999px 999px 26px 26px;overflow:hidden;position:relative;
+      border:1px solid var(--hairline);box-shadow:0 30px 80px rgba(0,0,0,.5);
+    }
+    .arch img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+    .arch:hover img{transform:scale(1.035)}
+    .hero .arch{aspect-ratio:3/4;max-width:430px;margin-left:auto}
+    .hero-badge{
+      position:absolute;left:-13%;bottom:-6%;width:clamp(120px,26%,175px);aspect-ratio:1;
+      border-radius:50%;overflow:hidden;border:1px solid rgba(242,237,225,.25);
+      box-shadow:0 18px 50px rgba(0,0,0,.55);animation:bob 7s ease-in-out infinite;
+    }
+    .hero-badge img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+    @keyframes bob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-12px) rotate(2deg)}}
+    .stats{
+      display:flex;gap:2.4rem;flex-wrap:wrap;margin-top:2.8rem;border-top:1px solid var(--hairline);padding-top:1.6rem;
+    }
+    .stats div b{font-family:var(--serif);font-size:1.25rem;font-weight:480;display:block}
+    .stats div span{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+    .scroll-cue{position:absolute;bottom:1.4rem;left:50%;transform:translateX(-50%);color:var(--muted);font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:.5rem}
+    .scroll-cue::after{content:"↓";font-size:1rem;animation:bob 2.4s ease-in-out infinite}
+
+    /* ---------- marquee ---------- */
+    .marquee{border-block:1px solid var(--hairline);padding:1rem 0;overflow:hidden;white-space:nowrap;background:var(--bg-2)}
+    .marquee-track{display:inline-flex;gap:0;animation:scroll 30s linear infinite}
+    .marquee span{font-family:var(--serif);font-weight:480;font-size:1.02rem;letter-spacing:.24em;text-transform:uppercase;padding-inline:1.6rem;display:inline-flex;align-items:center;gap:1.6rem}
+    .marquee i{font-style:normal;color:var(--chili)}
+    @keyframes scroll{to{transform:translateX(-50%)}}
+    .marquee:hover .marquee-track{animation-play-state:paused}
+
+    /* ---------- sections ---------- */
+    section{padding-block:clamp(4.5rem,10vw,7.5rem);scroll-margin-top:64px}
+    .sec-head{margin-bottom:clamp(2.5rem,6vw,4rem)}
+    .sec-head h2{margin-top:1rem}
+    .sec-head .lede{margin-top:1rem}
+
+    /* ---------- story ---------- */
+    .story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2.5rem,6vw,5rem);align-items:center}
+    .story-badge{
+      border-radius:50%;overflow:hidden;aspect-ratio:1;max-width:390px;margin-inline:auto;
+      border:1px solid var(--hairline);box-shadow:0 26px 70px rgba(0,0,0,.55);
+    }
+    .story-badge img{width:100%;height:100%;object-fit:cover;object-position:50% 52%;transform:scale(1.5) translateX(6%)}
+    .story p{color:var(--muted);margin-top:1.2rem;max-width:58ch}
+    .story p b{color:var(--cream);font-weight:500}
+    .story .drop{font-family:var(--serif);font-size:clamp(1.5rem,2.6vw,2rem);line-height:1.35;color:var(--cream);font-weight:440;text-wrap:balance}
+
+    /* ---------- lineup ---------- */
+    .sauce-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.1rem;max-width:1080px}
+    .sauce{
+      background:var(--paper);color:var(--ink);border-radius:18px;position:relative;overflow:hidden;
+      display:flex;flex-direction:column;box-shadow:0 12px 34px rgba(0,0,0,.35);
+      transition:transform .45s var(--ease),box-shadow .45s var(--ease);min-width:0;
+    }
+    .sauce:hover{transform:translateY(-8px) rotate(-.6deg);box-shadow:0 28px 60px rgba(0,0,0,.5)}
+    .sauce-band{
+      background:var(--band);color:var(--cream);font-size:.6rem;font-weight:600;letter-spacing:.24em;
+      text-transform:uppercase;text-align:center;padding:.44rem .6rem;
+    }
+    .sauce-body{padding:1.4rem 1.4rem 1.3rem;flex:1;display:flex;flex-direction:column}
+    .sauce-no{font-family:var(--serif);font-style:italic;font-weight:500;font-size:.94rem;color:rgba(23,19,15,.55)}
+    .sauce h3{font-size:clamp(1.5rem,2.2vw,1.9rem);line-height:1.05;margin:.35rem 0 .0rem}
+    .sauce h3 .em{color:var(--band)}
+    .sauce-ing{font-size:.8rem;letter-spacing:.04em;color:rgba(23,19,15,.62);font-weight:500;border-top:1px solid rgba(23,19,15,.16);border-bottom:1px solid rgba(23,19,15,.16);padding:.55rem 0;margin:.85rem 0}
+    .sauce-desc{font-size:.92rem;line-height:1.6;color:rgba(23,19,15,.78);flex:1}
+    .sauce-foot{display:flex;justify-content:space-between;align-items:center;margin-top:1.1rem;padding-top:.8rem}
+    .fermented{font-size:.62rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(23,19,15,.5)}
+    .dots{display:inline-flex;gap:.28rem}
+    .dots i{width:8px;height:8px;border-radius:50%;background:rgba(23,19,15,.14)}
+    .dots i.on{background:var(--band,var(--chili))}
+    .oz{font-size:.68rem;letter-spacing:.08em;color:rgba(23,19,15,.55);font-weight:600}
+    .sauce::after{ /* label keyline */
+      content:"";position:absolute;inset:.5rem;border:1px solid rgba(23,19,15,.14);border-radius:12px;
+      pointer-events:none;
+    }
+
+    /* ---------- method ---------- */
+    .method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+    .method{border-top:1px solid var(--hairline);padding-top:1.6rem}
+    .method b{font-family:var(--serif);font-style:italic;font-weight:340;font-size:3.4rem;color:var(--gold);display:block;line-height:1}
+    .method h3{font-size:1.35rem;margin:.7rem 0 .5rem;font-weight:500}
+    .method p{color:var(--muted);font-size:.95rem}
+
+    /* ---------- awards ---------- */
+    .awards-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+    .award-cards{display:grid;gap:1rem}
+    .award{
+      display:flex;gap:1.4rem;align-items:center;background:var(--bg-2);border:1px solid var(--hairline);
+      border-radius:18px;padding:1.4rem 1.6rem;transition:border-color .3s,transform .4s var(--ease);
+    }
+    .award:hover{border-color:rgba(201,164,90,.55);transform:translateX(6px)}
+    .award .year{font-family:var(--serif);font-style:italic;font-weight:340;font-size:clamp(2.6rem,5vw,3.6rem);color:var(--gold);line-height:1;flex:none}
+    .award div h3{font-size:1.15rem;font-weight:520;margin-bottom:.25rem}
+    .award div p{font-size:.84rem;color:var(--muted)}
+    .award .chip{margin-left:auto;flex:none;font-size:.6rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);background:var(--gold);border-radius:999px;padding:.5rem .8rem}
+    .awards .arch{aspect-ratio:3/4;max-width:360px;margin-inline:auto}
+    .awards-note{margin-top:2.4rem;color:var(--muted);font-size:.92rem}
+    .awards-note b{color:var(--gold);font-weight:500}
+
+    /* ---------- gallery ---------- */
+    .gal{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem}
+    .gal figure{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--hairline)}
+    .gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+    .gal figure:hover img{transform:scale(1.05)}
+    .gal figcaption{
+      position:absolute;left:0;right:0;bottom:0;padding:2rem 1.1rem .95rem;font-size:.78rem;letter-spacing:.06em;color:var(--cream);
+      background:linear-gradient(transparent,rgba(12,10,9,.88));font-weight:500;
+    }
+    .g1{grid-column:span 5;aspect-ratio:3/4}
+    .g2{grid-column:span 4;aspect-ratio:1}
+    .g3{grid-column:span 3;aspect-ratio:3/4}
+    .g4{grid-column:2/span 7;aspect-ratio:16/10}
+
+    /* ---------- find us ---------- */
+    .find{background:var(--paper);color:var(--ink);border-radius:26px;padding:clamp(2.4rem,6vw,4.2rem);position:relative;overflow:hidden}
+    .find .kicker{color:var(--green)}
+    .find .kicker::before{background:var(--green)}
+    .find h2{margin:.9rem 0 1rem;max-width:16ch}
+    .find p{max-width:56ch;color:rgba(23,19,15,.75)}
+    .find .cta-row{margin-top:2rem}
+    .btn-ink{background:var(--ink);color:var(--paper)}
+    .btn-ink:hover{background:#2a231d;transform:translateY(-2px)}
+    .btn-outline-ink{border:1px solid rgba(23,19,15,.3);color:var(--ink)}
+    .btn-outline-ink:hover{border-color:var(--ink);transform:translateY(-2px)}
+    .find::after{
+      content:"";position:absolute;right:-90px;bottom:-110px;width:300px;height:300px;border-radius:50%;
+      background:radial-gradient(circle at 30% 30%,rgba(200,69,42,.16),transparent 65%);pointer-events:none;
+    }
+
+    /* ---------- footer ---------- */
+    footer{background:#0d0b0a;border-top:1px solid var(--hairline);padding:3.4rem 0 2.6rem;font-size:.85rem;color:var(--muted)}
+    .foot{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:flex-start}
+    .foot .mark{display:flex;gap:.9rem;align-items:center}
+    .foot .mark svg{width:44px;height:44px}
+    .foot .mark b{font-family:var(--serif);font-size:1.05rem;color:var(--cream)}
+    .foot .mark span{display:block;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase}
+    .foot-links{display:grid;gap:.5rem}
+    .foot-links a{text-decoration:none;color:var(--muted)}
+    .foot-links a:hover{color:var(--gold)}
+    .foot-base{margin-top:2.6rem;padding-top:1.4rem;border-top:1px solid var(--hairline);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.74rem;letter-spacing:.04em}
+    .foot-base .star{color:var(--gold)}
+
+    /* ---------- reveal ---------- */
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}
+    .reveal.in{opacity:1;transform:none}
+
+    /* ---------- responsive ---------- */
+    @media (max-width:900px){
+      .hero-grid{grid-template-columns:1fr;gap:3rem}
+      .hero h1{font-size:clamp(2.5rem,9vw,4rem)}
+      .hero .arch{max-width:390px;margin-inline:auto}
+      .hero-badge{left:auto;right:-4%;bottom:-7%}
+      .story-grid{grid-template-columns:1fr}
+      .story-badge{max-width:300px}
+      .method-grid{grid-template-columns:1fr;gap:1.6rem}
+      .method b{font-size:2.6rem;display:inline-block;margin-right:.5rem}
+      .awards-grid{grid-template-columns:1fr}
+      .awards .arch{max-width:300px}
+      .g1{grid-column:span 6}.g2{grid-column:span 6}.g3{grid-column:span 6}.g4{grid-column:span 12}
+      .scroll-cue{display:none}
+    }
+    @media (max-width:760px){
+      .links{display:none}
+      .menu-btn{display:inline-flex}
+      .nav{height:64px}
+    }
+    @media (max-width:480px){
+      .stats{gap:1.4rem}
+      .award{padding:1.1rem 1.2rem;gap:1rem}
+      .award .chip{display:none}
+      .g1,.g2,.g3{grid-column:span 12}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- reusable badge mark -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="mark" viewBox="0 0 120 120">
+        <circle cx="60" cy="60" r="57" fill="#f2ede1"/>
+        <circle cx="60" cy="60" r="56" fill="none" stroke="#2f4d2b" stroke-width="1.6"/>
+        <circle cx="60" cy="60" r="42.5" fill="none" stroke="#2f4d2b" stroke-width="1.2"/>
+        <text font-family="Fraunces,Georgia,serif" font-weight="500" font-size="10.4" letter-spacing="2.6" fill="#17130f"><textPath href="#arcT" startOffset="50%" text-anchor="middle">NIGHTSHADE SAUCES</textPath></text>
+        <text font-family="Fraunces,Georgia,serif" font-weight="500" font-size="9.6" letter-spacing="2.2" fill="#17130f"><textPath href="#arcB" startOffset="50%" text-anchor="middle">HUTTO · TEXAS</textPath></text>
+        <text font-family="Fraunces,Georgia,serif" font-weight="600" font-size="6.4" letter-spacing="1" fill="#17130f"><textPath href="#arcE" startOffset="50%" text-anchor="middle">EST.</textPath></text>
+        <text font-family="Fraunces,Georgia,serif" font-weight="600" font-size="6.4" letter-spacing="1" fill="#17130f"><textPath href="#arcY" startOffset="50%" text-anchor="middle">2024</textPath></text>
+        <text x="57" y="76" font-family="Fraunces,Georgia,serif" font-weight="460" font-size="46" text-anchor="middle" fill="#17130f">N</text>
+        <g transform="translate(79 46)">
+          <g fill="#ffffff" stroke="#cfc9b8" stroke-width=".5">
+            <ellipse rx="2.9" ry="6.2" transform="rotate(18)" cy="-6.5"/>
+            <ellipse rx="2.9" ry="6.2" transform="rotate(90)" cy="-6.5"/>
+            <ellipse rx="2.9" ry="6.2" transform="rotate(162)" cy="-6.5"/>
+            <ellipse rx="2.9" ry="6.2" transform="rotate(234)" cy="-6.5"/>
+            <ellipse rx="2.9" ry="6.2" transform="rotate(306)" cy="-6.5"/>
+          </g>
+          <circle r="2.5" fill="#e0b83c"/>
+          <g fill="#3d6b35">
+            <ellipse cx="5.5" cy="7.5" rx="3.4" ry="1.9" transform="rotate(38 5.5 7.5)"/>
+            <ellipse cx="-6" cy="9.5" rx="3.6" ry="2" transform="rotate(-24 -6 9.5)"/>
+          </g>
+        </g>
+      </symbol>
+      <path id="arcT" d="M 14.5,60 A 45.5,45.5 0 1 1 105.5,60" fill="none"/>
+      <path id="arcB" d="M 17.5,60 A 42.5,42.5 0 0 0 102.5,60" fill="none"/>
+      <path id="arcE" d="M 24,60 A 36,36 0 0 0 96,60" transform="rotate(-90 60 60)" fill="none"/>
+      <path id="arcY" d="M 24,60 A 36,36 0 0 0 96,60" transform="rotate(90 60 60)" fill="none"/>
+    </defs>
+  </svg>
+
+  <header id="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#top">
+        <svg><use href="#mark"/></svg>
+        <span><b>Nightshade Sauces</b><small>Hutto · Texas</small></span>
+      </a>
+      <nav class="links" aria-label="Primary">
+        <a href="#lineup">Lineup</a>
+        <a href="#method">Method</a>
+        <a href="#awards">Awards</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#find">Find us</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuOverlay">Menu</button>
+    </div>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay">
+    <nav aria-label="Mobile">
+      <a href="#lineup">Lineup</a>
+      <a href="#method">Method</a>
+      <a href="#awards">Awards</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#find">Find us</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="kicker reveal">Est. 2024 · Hutto, Texas</span>
+          <h1 class="reveal" style="--d:.08s">A small&#8209;batch <span class="em">experiment</span> in flavor.</h1>
+          <p class="lede reveal" style="--d:.16s">Nightshade Sauces ferments real chiles and fruit into numbered bottles of hot sauce — five-ounce pours made in Hutto, Texas, and judged first place two years running.</p>
+          <div class="cta-row reveal" style="--d:.24s">
+            <a class="btn btn-primary" href="#lineup">Meet the lineup</a>
+            <a class="btn btn-ghost" href="#awards">★ The hardware</a>
+          </div>
+          <div class="stats reveal" style="--d:.32s">
+            <div><b>№ 001–452+</b><span>Numbered batches</span></div>
+            <div><b>5 fl oz</b><span>Every bottle</span></div>
+            <div><b>1st + 1st</b><span>2025 · 2026</span></div>
+          </div>
+        </div>
+        <div class="hero-art reveal" style="--d:.2s">
+          <div class="arch">
+            <img src="assets/bottles.jpg" alt="Six bottles of Nightshade Sauces lined up on a market table" width="1125" height="1500" fetchpriority="high">
+          </div>
+          <div class="hero-badge" aria-hidden="true">
+            <img src="assets/badge.jpg" alt="" width="825" height="1100" style="object-fit:cover">
+          </div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#story">Scroll</a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Fermented hot sauce <i>✦</i> Small batch <i>✦</i> Numbered experiments <i>✦</i> Hutto, Texas <i>✦</i> Back-to-back 1st place <i>✦</i> Fermented hot sauce <i>✦</i> Small batch <i>✦</i> Numbered experiments <i>✦</i> Hutto, Texas <i>✦</i> Back-to-back 1st place <i>✦</i>&nbsp;</span>
+        <span>Fermented hot sauce <i>✦</i> Small batch <i>✦</i> Numbered experiments <i>✦</i> Hutto, Texas <i>✦</i> Back-to-back 1st place <i>✦</i> Fermented hot sauce <i>✦</i> Small batch <i>✦</i> Numbered experiments <i>✦</i> Hutto, Texas <i>✦</i> Back-to-back 1st place <i>✦</i>&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- STORY -->
+    <section id="story" class="story">
+      <div class="wrap story-grid">
+        <div class="story-badge reveal"><img src="assets/badge.jpg" alt="Nightshade Sauces circular sticker: nightshade flower over the letter N, Est. 2024, Hutto, Texas" width="825" height="1100"></div>
+        <div>
+          <span class="kicker reveal">The name</span>
+          <h2 class="reveal" style="--d:.08s">Nightshade, like the <span class="em">family tree</span>.</h2>
+          <p class="drop reveal" style="--d:.14s">Peppers, tomatillos, tomatoes, potatoes — the nightshade family is where nearly every good hot sauce starts.</p>
+          <p class="reveal" style="--d:.2s">So we took the family name and grew it into a label. Since <b>2024</b>, every batch has been a small, numbered experiment: ferment the fruit and chiles, taste it with the market crowd, bottle what works — and when the batch is gone, it's gone.</p>
+          <p class="reveal" style="--d:.26s">The blossom on the label is the nightshade flower itself: quiet, hardy, <b>a lot more interesting than it looks</b>. That's the idea.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINEUP -->
+    <section id="lineup" style="background:var(--bg-2);border-block:1px solid var(--hairline)">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="kicker reveal">The lineup</span>
+          <h2 class="reveal" style="--d:.08s">Five experiments, <span class="em">on the shelf</span>.</h2>
+          <p class="lede reveal" style="--d:.14s">Every recipe gets a number when it's bottled. When a batch runs out, its number retires with it — what's below is what the tent had last weekend.</p>
+        </div>
+        <div class="sauce-grid">
+          <article class="sauce reveal" style="--band:var(--berry);--d:.05s">
+            <div class="sauce-band">A small-batch experiment in flavor</div>
+            <div class="sauce-body">
+              <span class="sauce-no">Experiment No. 422:</span>
+              <h3>Bramble <span class="em">&amp;</span> Smoke</h3>
+              <p class="sauce-ing">Blueberry – Blackberry – Chipotle</p>
+              <p class="sauce-desc">Slow-sweet berries up front; the chipotle settles in behind and smolders long after the first taste. Dark, jammy, unexpected.</p>
+              <div class="sauce-foot"><span class="dots" role="img" aria-label="Heat level 3 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="oz">5 fl oz</span></div>
+            </div>
+          </article>
+          <article class="sauce reveal" style="--band:var(--seoul);--d:.12s">
+            <div class="sauce-band">A small-batch experiment in flavor</div>
+            <div class="sauce-body">
+              <span class="sauce-no">Experiment No. 726:</span>
+              <h3>Seoul <span class="em">&#9660;</span> Fire</h3>
+              <p class="sauce-ing">Kimchi – Habanero</p>
+              <p class="sauce-desc">A fermented funk with K-market swagger — kimchi depth first, then the habanero arrives like a headliner. The one people buy twice.</p>
+              <div class="sauce-foot"><span class="dots" role="img" aria-label="Heat level 4 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="oz">5 fl oz</span></div>
+            </div>
+          </article>
+          <article class="sauce reveal" style="--band:var(--greenone);--d:.19s">
+            <div class="sauce-band">A small-batch experiment in flavor</div>
+            <div class="sauce-body">
+              <span class="sauce-no">Experiment No. 007:</span>
+              <h3>A <span class="em">Green</span> One</h3>
+              <p class="sauce-ing">Serrano – Jalapeño – Poblano</p>
+              <p class="sauce-desc">The classic green trio — bright, grassy, and generous. License-plate approval not included, but it did earn the very first number.</p>
+              <div class="sauce-foot"><span class="dots" role="img" aria-label="Heat level 2 of 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="oz">5 fl oz</span></div>
+            </div>
+          </article>
+          <article class="sauce reveal" style="--band:var(--island);--d:.26s">
+            <div class="sauce-band">A small-batch experiment in flavor</div>
+            <div class="sauce-body">
+              <span class="sauce-no">Experiment No. 116:</span>
+              <h3>Island <span class="em">Vibes</span></h3>
+              <p class="sauce-ing">Mango – Habanero – Toasted Corn</p>
+              <p class="sauce-desc">Front porch in the tropics: mango sweetness over toasted-corn warmth, with habanero sneaking in from the back step.</p>
+              <div class="sauce-foot"><span class="dots" role="img" aria-label="Heat level 3 of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="oz">5 fl oz</span></div>
+            </div>
+          </article>
+          <article class="sauce reveal" style="--band:var(--blush);--d:.33s">
+            <div class="sauce-band">A small-batch experiment in flavor</div>
+            <div class="sauce-body">
+              <span class="sauce-no">Experiment in progress</span>
+              <h3>Blush <span class="em">&amp;</span> Burn</h3>
+              <p class="sauce-ing">Strawberry ferment</p>
+              <p class="sauce-desc">A pretty pink pour with a sneaky, slow-building burn. Dessert at first sip, hot sauce by the second.</p>
+              <div class="sauce-foot"><span class="dots" role="img" aria-label="Heat level 2 of 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="oz">5 fl oz</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- METHOD -->
+    <section id="method">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="kicker reveal">The method</span>
+          <h2 class="reveal" style="--d:.08s">Slow food, <span class="em">fast shelf</span>.</h2>
+        </div>
+        <div class="method-grid">
+          <div class="method reveal" style="--d:.05s">
+            <b>01</b>
+            <h3>Ferment</h3>
+            <p>Every bottle starts as a ferment — the label says so, and it's the whole point. Time, salt patience, and chiles doing what chiles do.</p>
+          </div>
+          <div class="method reveal" style="--d:.15s">
+            <b>02</b>
+            <h3>Keep it small</h3>
+            <p>Batches stay deliberately small so each one can be tuned, tasted, and adjusted. No batch is too precious to rework if it isn't right.</p>
+          </div>
+          <div class="method reveal" style="--d:.25s">
+            <b>03</b>
+            <h3>Number &amp; pour</h3>
+            <p>Finished batches get their experiment number and a spot on the market table. Tasters decide; sell-outs decide faster.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section id="awards" class="awards" style="background:var(--bg-2);border-block:1px solid var(--hairline)">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="kicker reveal">The hardware</span>
+          <h2 class="reveal" style="--d:.08s">First place, <span class="em">back to back</span>.</h2>
+          <p class="lede reveal" style="--d:.14s">At Cactus Land Brewing Company's Hot Sauce &amp; Salsa Competition in Adkins, Texas, the judges' answer two years in a row has been the same.</p>
+        </div>
+        <div class="awards-grid">
+          <div class="award-cards">
+            <article class="award reveal" style="--d:.05s">
+              <span class="year">2025</span>
+              <div><h3>1st Place · Hot Sauce</h3><p>Cactus Land Brewing Co. — Hot Sauce &amp; Salsa Competition, Adkins, TX</p></div>
+              <span class="chip">★ First</span>
+            </article>
+            <article class="award reveal" style="--d:.13s">
+              <span class="year">2026</span>
+              <div><h3>1st Place · Hot Sauce</h3><p>Cactus Land Brewing Co. — Hot Sauce &amp; Salsa Competition, Adkins, TX</p></div>
+              <span class="chip">★ First</span>
+            </article>
+            <p class="awards-note reveal" style="--d:.21s">The chili-pepper trophy from 2025 and the engraved 2026 board live at the booth — come by, they like an audience.</p>
+          </div>
+          <div class="arch reveal" style="--d:.18s">
+            <img src="assets/trophy.jpg" alt="First place pepper trophy from 2025 and engraved first-place board from 2026, on the Nightshade Sauces market table" width="1050" height="1400" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="kicker reveal">From the booth</span>
+          <h2 class="reveal" style="--d:.08s">Sightings of the <span class="em">tent</span>.</h2>
+        </div>
+        <div class="gal">
+          <figure class="g1 reveal"><img src="assets/bottles.jpg" alt="The full Nightshade Sauces lineup on the market table" width="1125" height="1500" loading="lazy"><figcaption>The lineup at the booth — every flavor pours for tasting.</figcaption></figure>
+          <figure class="g2 reveal" style="--d:.08s"><img src="assets/awards.jpg" alt="Award signs from the Cactus Land Brewing Co. hot sauce and salsa competition" width="1200" height="1600" loading="lazy"><figcaption>Winners' signage — two years straight.</figcaption></figure>
+          <figure class="g3 reveal" style="--d:.16s"><img src="assets/badge.jpg" alt="Nightshade Sauces sticker on the market tent" width="825" height="1100" loading="lazy"><figcaption>The tent sticker — Est. 2024.</figcaption></figure>
+          <figure class="g4 reveal" style="--d:.12s"><img src="assets/trophy.jpg" alt="Chili pepper trophy and engraved wooden first place board" width="1050" height="1400" loading="lazy"><figcaption>The hardware: 2025 trophy, 2026 engraved board.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIND US -->
+    <section id="find">
+      <div class="wrap">
+        <div class="find reveal">
+          <span class="kicker">Find us</span>
+          <h2>Follow the <span class="em">smell of the ferment</span>.</h2>
+          <p>Nightshade Sauces pours at markets, festivals, and tasting tables around Hutto and Central Texas. Stop by, taste everything on the table, and leave with whichever bottle surprised you most.</p>
+          <!-- OWNER EDIT: add real links when ready (email, Instagram, market calendar), e.g.
+          <div class="cta-row">
+            <a class="btn btn-ink" href="mailto:hello@...">Order a bottle</a>
+            <a class="btn btn-outline-ink" href="https://instagram.com/...">@nightshadesauces</a>
+          </div>
+          -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <div class="mark">
+          <svg aria-hidden="true"><use href="#mark"/></svg>
+          <span><b>Nightshade Sauces</b><span>Est. 2024 · Hutto, Texas</span></span>
+        </div>
+        <nav class="foot-links" aria-label="Footer">
+          <a href="#lineup">The lineup</a>
+          <a href="#awards">The hardware</a>
+          <a href="#find">Find the tent</a>
+        </nav>
+      </div>
+      <div class="foot-base">
+        <span>© <span id="y">2026</span> Nightshade Sauces · Hutto, Texas</span>
+        <span class="star">★ 1st Place Hot Sauce — 2025 &amp; 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+  <script>
+    (function(){
+      var bar = document.getElementById('topbar');
+      var add = function(){ bar.classList.toggle('scrolled', window.scrollY > 24); };
+      add(); window.addEventListener('scroll', add, {passive:true});
+
+      var btn = document.getElementById('menuBtn');
+      var overlay = document.getElementById('menuOverlay');
+      function closeMenu(){ document.body.classList.remove('menu-open'); btn.setAttribute('aria-expanded','false'); }
+      btn.addEventListener('click', function(){
+        var open = document.body.classList.toggle('menu-open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      overlay.addEventListener('click', function(e){ if (e.target.closest('a') || e.target === overlay) closeMenu(); });
+      document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeMenu(); });
+
+      document.getElementById('y').textContent = new Date().getFullYear();
+
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+      }, {threshold:.14, rootMargin:'0px 0px -40px 0px'});
+      document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
